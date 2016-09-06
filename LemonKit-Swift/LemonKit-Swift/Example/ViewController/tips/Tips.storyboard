@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LKNotification-->
+        <scene sceneID="ECG-hs-iiv">
+            <objects>
+                <viewController storyboardIdentifier="LKNotificationViewController" title="LKNotification" id="nYr-zx-sRN" customClass="LKNotificationViewController" customModule="LemonKit_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PYw-jp-VB7"/>
+                        <viewControllerLayoutGuide type="bottom" id="x15-Gn-U7p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Vc-CS-aAC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="LKNotificationViewController" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXF-mP-ZUN">
+                                <frame key="frameInset" minX="103" minY="105" width="169" height="30"/>
+                                <state key="normal" title="show a basic notification"/>
+                                <connections>
+                                    <action selector="showBasicNotification:" destination="nYr-zx-sRN" eventType="touchUpInside" id="Fqz-BO-vdY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DXF-mP-ZUN" firstAttribute="top" secondItem="PYw-jp-VB7" secondAttribute="bottom" constant="84" id="eZz-kW-f6b"/>
+                            <constraint firstItem="DXF-mP-ZUN" firstAttribute="centerX" secondItem="4Vc-CS-aAC" secondAttribute="centerX" id="j9I-kz-Knt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Gx-vO-w2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-481" y="-308"/>
+        </scene>
+    </scenes>
+</document>
