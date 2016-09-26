@@ -30,6 +30,7 @@ protocol LKNotificationDelegate  {
 }
 
 private var navigationWindow: UIWindow?
+private var _defaultWindow: UIWindow?// 默认的Window对象
 private var navigationHeightDic: Dictionary<String , CGFloat> = Dictionary()
 
 /// 通知控件，通常该View不需要手动实例化
@@ -98,6 +99,10 @@ class LKNotificationBar: UIControl {
         // 实例化公有变量
         self.isShowing = false
         self.autoCloseTime = 3.0
+        
+        if _defaultWindow == nil {
+            _defaultWindow = UIApplication.shared.keyWindow// 保存默认的UIWindow
+        }
         
         // 实例化私有变量
         let blurEffect : UIBlurEffect = UIBlurEffect.init(style: style == LKNotificationStyle.DARK ? UIBlurEffectStyle.dark : UIBlurEffectStyle.light)
@@ -188,6 +193,9 @@ class LKNotificationBar: UIControl {
      - parameter animated: 是否动画显示
      */
     func show(animated: Bool) -> Void {
+        if !self.isShowing {
+            navigationWindow?.makeKeyAndVisible()
+        }
         self.isShowing = true
         navigationWindow?.frame = self.bounds
         navigationHeightDic[self.id] = self.frame.size.height
@@ -233,6 +241,9 @@ class LKNotificationBar: UIControl {
             }) { (finished) in
                 self.isShowing = false
                 self.removeFromSuperview()
+                if !self.isShowing {
+                    _defaultWindow?.makeKeyAndVisible()// 重新恢复默认的UIWindow为keyWindow
+                }
         }
     }
     
