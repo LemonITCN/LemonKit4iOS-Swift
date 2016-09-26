@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -36,6 +36,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Gx-vO-w2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-481" y="-308"/>
+        </scene>
+        <!--LKBubble-->
+        <scene sceneID="t8X-pu-q8w">
+            <objects>
+                <viewController storyboardIdentifier="LKBubbleViewController" title="LKBubble" id="UB1-1V-LjR" customClass="LKBubbleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bzh-yo-L33"/>
+                        <viewControllerLayoutGuide type="bottom" id="RFF-fC-PTm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v9V-5K-MZc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmF-SU-2uf">
+                                <state key="normal" title="show success bubble!"/>
+                                <connections>
+                                    <action selector="showSuccessBubble:" destination="UB1-1V-LjR" eventType="touchUpInside" id="rxI-ht-sMp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CmF-SU-2uf" firstAttribute="top" secondItem="Bzh-yo-L33" secondAttribute="bottom" constant="8" id="Nq1-7v-qsg"/>
+                            <constraint firstItem="CmF-SU-2uf" firstAttribute="centerX" secondItem="v9V-5K-MZc" secondAttribute="centerX" id="umZ-DN-H0h"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbz-tK-EEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="-308"/>
+        </scene>
+        <!--LKActionSheet-->
+        <scene sceneID="BqF-Ke-hgc">
+            <objects>
+                <viewController storyboardIdentifier="LKActionSheetViewController" title="LKActionSheet" id="P7U-9a-lZA" customClass="LKActionSheetViewController" customModule="LemonKit_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Iy-D4-eFG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rvi-mk-6tz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JBI-ka-vqc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3n-fD-fvh">
+                                <state key="normal" title="show a basic LKActionSheet!"/>
+                                <connections>
+                                    <action selector="showBasicLKActionSheet:" destination="P7U-9a-lZA" eventType="touchUpInside" id="1vl-y3-5tI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anz-zX-Ojn">
+                                <state key="normal" title="show a picker actionSheet"/>
+                                <connections>
+                                    <action selector="showPickerActionSheet:" destination="P7U-9a-lZA" eventType="touchUpInside" id="LVm-ei-shj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n3n-fD-fvh" firstAttribute="top" secondItem="6Iy-D4-eFG" secondAttribute="bottom" constant="8" id="6C6-fk-unv"/>
+                            <constraint firstItem="anz-zX-Ojn" firstAttribute="centerX" secondItem="JBI-ka-vqc" secondAttribute="centerX" id="KKX-kC-JIx"/>
+                            <constraint firstItem="anz-zX-Ojn" firstAttribute="top" secondItem="n3n-fD-fvh" secondAttribute="bottom" constant="19" id="cwX-FM-WRZ"/>
+                            <constraint firstItem="n3n-fD-fvh" firstAttribute="centerX" secondItem="JBI-ka-vqc" secondAttribute="centerX" id="dfS-KW-P8d"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DM8-Q5-LjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.8" y="-308.09595202398805"/>
         </scene>
     </scenes>
 </document>

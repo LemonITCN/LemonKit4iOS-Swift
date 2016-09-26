@@ -13,6 +13,7 @@
 		EA1994961D77BFD1002DF18F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1994941D77BFD1002DF18F /* LaunchScreen.storyboard */; };
 		EA1994A11D77BFD1002DF18F /* LemonKit_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1994A01D77BFD1002DF18F /* LemonKit_SwiftTests.swift */; };
 		EA1994AC1D77BFD1002DF18F /* LemonKit_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1994AB1D77BFD1002DF18F /* LemonKit_SwiftUITests.swift */; };
+		EA30DF651D98DCB500AC02A7 /* LKActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30DF641D98DCB500AC02A7 /* LKActionSheetView.swift */; };
 		EA54457E1D7D9B0B005537FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54457D1D7D9B0B005537FF /* MainViewController.swift */; };
 		EA5445801D7D9D3D005537FF /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54457F1D7D9D3D005537FF /* TipsViewController.swift */; };
 		EA5445841D7D9FB0005537FF /* CustomViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5445831D7D9FB0005537FF /* CustomViewsViewController.swift */; };
@@ -22,6 +23,9 @@
 		EAABC13D1D7D300D001ED28E /* LKNotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABC13C1D7D300D001ED28E /* LKNotificationBar.swift */; };
 		EAABC13F1D7D7A56001ED28E /* LKNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABC13E1D7D7A56001ED28E /* LKNotificationManager.swift */; };
 		EAABC1411D7D8E21001ED28E /* UIResponder+LKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABC1401D7D8E21001ED28E /* UIResponder+LKNotification.swift */; };
+		EACEDE071D98DDEB00413929 /* LKActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACEDE061D98DDEB00413929 /* LKActionItem.swift */; };
+		EAE63D021D99088500BE32E7 /* LKActionLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE63D011D99088500BE32E7 /* LKActionLineView.swift */; };
+		EAE63D041D99123100BE32E7 /* LKActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE63D031D99123100BE32E7 /* LKActionSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,7 @@
 		EA1994A71D77BFD1002DF18F /* LemonKit-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LemonKit-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1994AB1D77BFD1002DF18F /* LemonKit_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonKit_SwiftUITests.swift; sourceTree = "<group>"; };
 		EA1994AD1D77BFD1002DF18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA30DF641D98DCB500AC02A7 /* LKActionSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKActionSheetView.swift; sourceTree = "<group>"; };
 		EA54457D1D7D9B0B005537FF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA54457F1D7D9D3D005537FF /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		EA5445831D7D9FB0005537FF /* CustomViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewsViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +68,9 @@
 		EAABC13C1D7D300D001ED28E /* LKNotificationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKNotificationBar.swift; sourceTree = "<group>"; };
 		EAABC13E1D7D7A56001ED28E /* LKNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKNotificationManager.swift; sourceTree = "<group>"; };
 		EAABC1401D7D8E21001ED28E /* UIResponder+LKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+LKNotification.swift"; sourceTree = "<group>"; };
+		EACEDE061D98DDEB00413929 /* LKActionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKActionItem.swift; sourceTree = "<group>"; };
+		EAE63D011D99088500BE32E7 /* LKActionLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKActionLineView.swift; sourceTree = "<group>"; };
+		EAE63D031D99123100BE32E7 /* LKActionSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKActionSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,16 @@
 			path = "LemonKit-SwiftUITests";
 			sourceTree = "<group>";
 		};
+		EA30DF601D98DC3E00AC02A7 /* LKActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				EA30DF641D98DCB500AC02A7 /* LKActionSheetView.swift */,
+				EACEDE061D98DDEB00413929 /* LKActionItem.swift */,
+				EAE63D011D99088500BE32E7 /* LKActionLineView.swift */,
+			);
+			path = LKActionSheet;
+			sourceTree = "<group>";
+		};
 		EA54457B1D7D9988005537FF /* customViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +171,7 @@
 			children = (
 				EA5445851D7D9FD9005537FF /* LKNotificationViewController.swift */,
 				EA5445871D7DA016005537FF /* Tips.storyboard */,
+				EAE63D031D99123100BE32E7 /* LKActionSheetViewController.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -193,6 +212,7 @@
 		EAABC1331D7D2F4A001ED28E /* Tip */ = {
 			isa = PBXGroup;
 			children = (
+				EA30DF601D98DC3E00AC02A7 /* LKActionSheet */,
 				EAABC13A1D7D2FE2001ED28E /* LKBubble */,
 				EAABC13B1D7D2FE2001ED28E /* LKNotification */,
 			);
@@ -322,6 +342,7 @@
 					EA1994871D77BFD1002DF18F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2RD6E8WKY9;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					EA19949B1D77BFD1002DF18F = {
@@ -393,13 +414,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5445801D7D9D3D005537FF /* TipsViewController.swift in Sources */,
+				EAE63D021D99088500BE32E7 /* LKActionLineView.swift in Sources */,
 				EAABC1411D7D8E21001ED28E /* UIResponder+LKNotification.swift in Sources */,
 				EA5445861D7D9FD9005537FF /* LKNotificationViewController.swift in Sources */,
+				EACEDE071D98DDEB00413929 /* LKActionItem.swift in Sources */,
+				EA30DF651D98DCB500AC02A7 /* LKActionSheetView.swift in Sources */,
 				EAABC13F1D7D7A56001ED28E /* LKNotificationManager.swift in Sources */,
 				EA19948C1D77BFD1002DF18F /* AppDelegate.swift in Sources */,
 				EAABC13D1D7D300D001ED28E /* LKNotificationBar.swift in Sources */,
 				EA54457E1D7D9B0B005537FF /* MainViewController.swift in Sources */,
 				EA5445841D7D9FB0005537FF /* CustomViewsViewController.swift in Sources */,
+				EAE63D041D99123100BE32E7 /* LKActionSheetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,12 +577,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2RD6E8WKY9;
 				INFOPLIST_FILE = "LemonKit-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.lemonsoft.LemonKit-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -566,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2RD6E8WKY9;
 				INFOPLIST_FILE = "LemonKit-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
