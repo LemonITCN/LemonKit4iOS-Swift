@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0E6F441DB7895000F736A5 /* LKBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E6F431DB7895000F736A5 /* LKBubbleView.swift */; };
 		EA19948C1D77BFD1002DF18F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19948B1D77BFD1002DF18F /* AppDelegate.swift */; };
 		EA1994911D77BFD1002DF18F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA19948F1D77BFD1002DF18F /* Main.storyboard */; };
 		EA1994931D77BFD1002DF18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1994921D77BFD1002DF18F /* Assets.xcassets */; };
@@ -19,11 +20,13 @@
 		EA5445841D7D9FB0005537FF /* CustomViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5445831D7D9FB0005537FF /* CustomViewsViewController.swift */; };
 		EA5445861D7D9FD9005537FF /* LKNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5445851D7D9FD9005537FF /* LKNotificationViewController.swift */; };
 		EA5445881D7DA016005537FF /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5445871D7DA016005537FF /* Tips.storyboard */; };
+		EA6A342B1DB797A30027B610 /* UIResponder+LKBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A342A1DB797A30027B610 /* UIResponder+LKBubble.swift */; };
 		EAABC1391D7D2F54001ED28E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EAABC1371D7D2F54001ED28E /* icon.png */; };
 		EAABC13D1D7D300D001ED28E /* LKNotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABC13C1D7D300D001ED28E /* LKNotificationBar.swift */; };
 		EAABC13F1D7D7A56001ED28E /* LKNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABC13E1D7D7A56001ED28E /* LKNotificationManager.swift */; };
 		EAABC1411D7D8E21001ED28E /* UIResponder+LKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABC1401D7D8E21001ED28E /* UIResponder+LKNotification.swift */; };
 		EACEDE071D98DDEB00413929 /* LKActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACEDE061D98DDEB00413929 /* LKActionItem.swift */; };
+		EADC25A61DB7773900BA8372 /* LKBubbleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADC25A51DB7773900BA8372 /* LKBubbleInfo.swift */; };
 		EAE63D021D99088500BE32E7 /* LKActionLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE63D011D99088500BE32E7 /* LKActionLineView.swift */; };
 		EAE63D041D99123100BE32E7 /* LKActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE63D031D99123100BE32E7 /* LKActionSheetViewController.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA0E6F431DB7895000F736A5 /* LKBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBubbleView.swift; sourceTree = "<group>"; };
 		EA1994881D77BFD1002DF18F /* LemonKit-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LemonKit-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA19948B1D77BFD1002DF18F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA1994901D77BFD1002DF18F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,11 +68,13 @@
 		EA5445831D7D9FB0005537FF /* CustomViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewsViewController.swift; sourceTree = "<group>"; };
 		EA5445851D7D9FD9005537FF /* LKNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKNotificationViewController.swift; sourceTree = "<group>"; };
 		EA5445871D7DA016005537FF /* Tips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
+		EA6A342A1DB797A30027B610 /* UIResponder+LKBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+LKBubble.swift"; sourceTree = "<group>"; };
 		EAABC1371D7D2F54001ED28E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		EAABC13C1D7D300D001ED28E /* LKNotificationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKNotificationBar.swift; sourceTree = "<group>"; };
 		EAABC13E1D7D7A56001ED28E /* LKNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKNotificationManager.swift; sourceTree = "<group>"; };
 		EAABC1401D7D8E21001ED28E /* UIResponder+LKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+LKNotification.swift"; sourceTree = "<group>"; };
 		EACEDE061D98DDEB00413929 /* LKActionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKActionItem.swift; sourceTree = "<group>"; };
+		EADC25A51DB7773900BA8372 /* LKBubbleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBubbleInfo.swift; sourceTree = "<group>"; };
 		EAE63D011D99088500BE32E7 /* LKActionLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKActionLineView.swift; sourceTree = "<group>"; };
 		EAE63D031D99123100BE32E7 /* LKActionSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKActionSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +265,9 @@
 		EAABC13A1D7D2FE2001ED28E /* LKBubble */ = {
 			isa = PBXGroup;
 			children = (
+				EADC25A51DB7773900BA8372 /* LKBubbleInfo.swift */,
+				EA0E6F431DB7895000F736A5 /* LKBubbleView.swift */,
+				EA6A342A1DB797A30027B610 /* UIResponder+LKBubble.swift */,
 			);
 			path = LKBubble;
 			sourceTree = "<group>";
@@ -416,6 +425,9 @@
 				EA5445801D7D9D3D005537FF /* TipsViewController.swift in Sources */,
 				EAE63D021D99088500BE32E7 /* LKActionLineView.swift in Sources */,
 				EAABC1411D7D8E21001ED28E /* UIResponder+LKNotification.swift in Sources */,
+				EA0E6F441DB7895000F736A5 /* LKBubbleView.swift in Sources */,
+				EA6A342B1DB797A30027B610 /* UIResponder+LKBubble.swift in Sources */,
+				EADC25A61DB7773900BA8372 /* LKBubbleInfo.swift in Sources */,
 				EA5445861D7D9FD9005537FF /* LKNotificationViewController.swift in Sources */,
 				EACEDE071D98DDEB00413929 /* LKActionItem.swift in Sources */,
 				EA30DF651D98DCB500AC02A7 /* LKActionSheetView.swift in Sources */,
