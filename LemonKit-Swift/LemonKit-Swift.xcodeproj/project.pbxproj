@@ -15,6 +15,16 @@
 		EA1994A11D77BFD1002DF18F /* LemonKit_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1994A01D77BFD1002DF18F /* LemonKit_SwiftTests.swift */; };
 		EA1994AC1D77BFD1002DF18F /* LemonKit_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1994AB1D77BFD1002DF18F /* LemonKit_SwiftUITests.swift */; };
 		EA30DF651D98DCB500AC02A7 /* LKActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30DF641D98DCB500AC02A7 /* LKActionSheetView.swift */; };
+		EA4A38FE1DB8464D00F8C3A2 /* LKBubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A38FD1DB8464D00F8C3A2 /* LKBubbleViewController.swift */; };
+		EA4A39091DB84CD800F8C3A2 /* lkbubble-warning.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A39001DB84CD800F8C3A2 /* lkbubble-warning.png */; };
+		EA4A390A1DB84CD800F8C3A2 /* lkbubble1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4A39011DB84CD800F8C3A2 /* lkbubble1.jpg */; };
+		EA4A390B1DB84CD800F8C3A2 /* lkbubble2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4A39021DB84CD800F8C3A2 /* lkbubble2.jpg */; };
+		EA4A390C1DB84CD800F8C3A2 /* lkbubble3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4A39031DB84CD800F8C3A2 /* lkbubble3.jpg */; };
+		EA4A390D1DB84CD800F8C3A2 /* lkbubble4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4A39041DB84CD800F8C3A2 /* lkbubble4.jpg */; };
+		EA4A390E1DB84CD800F8C3A2 /* lkbubble5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4A39051DB84CD800F8C3A2 /* lkbubble5.jpg */; };
+		EA4A390F1DB84CD800F8C3A2 /* lkbubble6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4A39061DB84CD800F8C3A2 /* lkbubble6.jpg */; };
+		EA4A39101DB84CD800F8C3A2 /* lkbubble7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4A39071DB84CD800F8C3A2 /* lkbubble7.jpg */; };
+		EA4A39111DB84CD800F8C3A2 /* lkbubble8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4A39081DB84CD800F8C3A2 /* lkbubble8.jpg */; };
 		EA54457E1D7D9B0B005537FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54457D1D7D9B0B005537FF /* MainViewController.swift */; };
 		EA5445801D7D9D3D005537FF /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54457F1D7D9D3D005537FF /* TipsViewController.swift */; };
 		EA5445841D7D9FB0005537FF /* CustomViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5445831D7D9FB0005537FF /* CustomViewsViewController.swift */; };
@@ -63,6 +73,16 @@
 		EA1994AB1D77BFD1002DF18F /* LemonKit_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonKit_SwiftUITests.swift; sourceTree = "<group>"; };
 		EA1994AD1D77BFD1002DF18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA30DF641D98DCB500AC02A7 /* LKActionSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKActionSheetView.swift; sourceTree = "<group>"; };
+		EA4A38FD1DB8464D00F8C3A2 /* LKBubbleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBubbleViewController.swift; sourceTree = "<group>"; };
+		EA4A39001DB84CD800F8C3A2 /* lkbubble-warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lkbubble-warning.png"; sourceTree = "<group>"; };
+		EA4A39011DB84CD800F8C3A2 /* lkbubble1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble1.jpg; sourceTree = "<group>"; };
+		EA4A39021DB84CD800F8C3A2 /* lkbubble2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble2.jpg; sourceTree = "<group>"; };
+		EA4A39031DB84CD800F8C3A2 /* lkbubble3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble3.jpg; sourceTree = "<group>"; };
+		EA4A39041DB84CD800F8C3A2 /* lkbubble4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble4.jpg; sourceTree = "<group>"; };
+		EA4A39051DB84CD800F8C3A2 /* lkbubble5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble5.jpg; sourceTree = "<group>"; };
+		EA4A39061DB84CD800F8C3A2 /* lkbubble6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble6.jpg; sourceTree = "<group>"; };
+		EA4A39071DB84CD800F8C3A2 /* lkbubble7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble7.jpg; sourceTree = "<group>"; };
+		EA4A39081DB84CD800F8C3A2 /* lkbubble8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble8.jpg; sourceTree = "<group>"; };
 		EA54457D1D7D9B0B005537FF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA54457F1D7D9D3D005537FF /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		EA5445831D7D9FB0005537FF /* CustomViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewsViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +185,22 @@
 			path = LKActionSheet;
 			sourceTree = "<group>";
 		};
+		EA4A38FF1DB84CD800F8C3A2 /* LKBubble */ = {
+			isa = PBXGroup;
+			children = (
+				EA4A39001DB84CD800F8C3A2 /* lkbubble-warning.png */,
+				EA4A39011DB84CD800F8C3A2 /* lkbubble1.jpg */,
+				EA4A39021DB84CD800F8C3A2 /* lkbubble2.jpg */,
+				EA4A39031DB84CD800F8C3A2 /* lkbubble3.jpg */,
+				EA4A39041DB84CD800F8C3A2 /* lkbubble4.jpg */,
+				EA4A39051DB84CD800F8C3A2 /* lkbubble5.jpg */,
+				EA4A39061DB84CD800F8C3A2 /* lkbubble6.jpg */,
+				EA4A39071DB84CD800F8C3A2 /* lkbubble7.jpg */,
+				EA4A39081DB84CD800F8C3A2 /* lkbubble8.jpg */,
+			);
+			path = LKBubble;
+			sourceTree = "<group>";
+		};
 		EA54457B1D7D9988005537FF /* customViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +214,7 @@
 				EA5445851D7D9FD9005537FF /* LKNotificationViewController.swift */,
 				EA5445871D7DA016005537FF /* Tips.storyboard */,
 				EAE63D031D99123100BE32E7 /* LKActionSheetViewController.swift */,
+				EA4A38FD1DB8464D00F8C3A2 /* LKBubbleViewController.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -245,6 +282,7 @@
 		EAABC1361D7D2F54001ED28E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				EA4A38FF1DB84CD800F8C3A2 /* LKBubble */,
 				EAABC1371D7D2F54001ED28E /* icon.png */,
 			);
 			path = Resource;
@@ -393,11 +431,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4A390A1DB84CD800F8C3A2 /* lkbubble1.jpg in Resources */,
+				EA4A390B1DB84CD800F8C3A2 /* lkbubble2.jpg in Resources */,
+				EA4A39101DB84CD800F8C3A2 /* lkbubble7.jpg in Resources */,
 				EAABC1391D7D2F54001ED28E /* icon.png in Resources */,
+				EA4A390D1DB84CD800F8C3A2 /* lkbubble4.jpg in Resources */,
 				EA5445881D7DA016005537FF /* Tips.storyboard in Resources */,
+				EA4A390F1DB84CD800F8C3A2 /* lkbubble6.jpg in Resources */,
+				EA4A39111DB84CD800F8C3A2 /* lkbubble8.jpg in Resources */,
 				EA1994961D77BFD1002DF18F /* LaunchScreen.storyboard in Resources */,
 				EA1994931D77BFD1002DF18F /* Assets.xcassets in Resources */,
+				EA4A390E1DB84CD800F8C3A2 /* lkbubble5.jpg in Resources */,
 				EA1994911D77BFD1002DF18F /* Main.storyboard in Resources */,
+				EA4A39091DB84CD800F8C3A2 /* lkbubble-warning.png in Resources */,
+				EA4A390C1DB84CD800F8C3A2 /* lkbubble3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +478,7 @@
 				EA5445861D7D9FD9005537FF /* LKNotificationViewController.swift in Sources */,
 				EACEDE071D98DDEB00413929 /* LKActionItem.swift in Sources */,
 				EA30DF651D98DCB500AC02A7 /* LKActionSheetView.swift in Sources */,
+				EA4A38FE1DB8464D00F8C3A2 /* LKBubbleViewController.swift in Sources */,
 				EAABC13F1D7D7A56001ED28E /* LKNotificationManager.swift in Sources */,
 				EA19948C1D77BFD1002DF18F /* AppDelegate.swift in Sources */,
 				EAABC13D1D7D300D001ED28E /* LKNotificationBar.swift in Sources */,

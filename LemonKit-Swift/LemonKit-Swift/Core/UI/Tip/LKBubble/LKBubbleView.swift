@@ -10,6 +10,7 @@ import UIKit
 
 private var defaultBubbleViewObj: LKBubbleView = LKBubbleView()
 
+/// LK泡泡控件
 class LKBubbleView: UIView {
     
     /// 进度属性
@@ -64,6 +65,9 @@ class LKBubbleView: UIView {
         self._infoDic[key] = info
     }
     
+    /// 显示指定的信息模型对应的泡泡控件
+    ///
+    /// - parameter info: 泡泡控件的信息对象
     func showWithInfo(info: LKBubbleInfo) -> Void {
         self._currentInfo = info
         self._closeKey = self._currentInfo?.key// 保存当前要关闭的key，防止关闭不需要关闭的bubble
@@ -93,7 +97,9 @@ class LKBubbleView: UIView {
                 self._iconImageView.layer.addSublayer(self._currentDrawLayer!)
                 self._currentTimer?.invalidate()
                 DispatchQueue.main.async {
-                    info.iconAnimation!(self._currentDrawLayer!)
+                    if info.iconAnimation != nil {
+                        info.iconAnimation!(self._currentDrawLayer!)
+                    }
                 }
             }
             else if info.iconArray?.count == 1 {
@@ -105,7 +111,7 @@ class LKBubbleView: UIView {
                 // 逐帧连环动画
                 self._frameAnimationPlayIndex = 0
                 self._iconImageView.image = self._currentInfo?.iconArray?[0]
-                self._currentTimer = Timer(timeInterval:  TimeInterval(info.frameAnimationTime), target: self, selector: #selector(self.frameAnimationPlayer), userInfo: nil, repeats: true)
+                self._currentTimer = Timer.scheduledTimer(timeInterval: TimeInterval(info.frameAnimationTime), target: self, selector: #selector(self.frameAnimationPlayer), userInfo: nil, repeats: true)
             }
             // maskView
             if (self._currentInfo?.isShowMaskView)! && self._maskView.isHidden {

@@ -37,36 +37,6 @@
             </objects>
             <point key="canvasLocation" x="-481" y="-308"/>
         </scene>
-        <!--LKBubble-->
-        <scene sceneID="t8X-pu-q8w">
-            <objects>
-                <viewController storyboardIdentifier="LKBubbleViewController" title="LKBubble" id="UB1-1V-LjR" customClass="LKBubbleViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Bzh-yo-L33"/>
-                        <viewControllerLayoutGuide type="bottom" id="RFF-fC-PTm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="v9V-5K-MZc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmF-SU-2uf">
-                                <state key="normal" title="show success bubble!"/>
-                                <connections>
-                                    <action selector="showSuccessBubble:" destination="UB1-1V-LjR" eventType="touchUpInside" id="rxI-ht-sMp"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="CmF-SU-2uf" firstAttribute="top" secondItem="Bzh-yo-L33" secondAttribute="bottom" constant="8" id="Nq1-7v-qsg"/>
-                            <constraint firstItem="CmF-SU-2uf" firstAttribute="centerX" secondItem="v9V-5K-MZc" secondAttribute="centerX" id="umZ-DN-H0h"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbz-tK-EEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="257" y="-308"/>
-        </scene>
         <!--LKActionSheet-->
         <scene sceneID="BqF-Ke-hgc">
             <objects>
@@ -104,6 +74,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DM8-Q5-LjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1008.8" y="-308.09595202398805"/>
+        </scene>
+        <!--LKBubble-->
+        <scene sceneID="CqD-0j-Cw0">
+            <objects>
+                <viewController storyboardIdentifier="LKBubbleViewController" title="LKBubble" id="fHV-1Z-zkI" customClass="LKBubbleViewController" customModule="LemonKit_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XzN-jX-pzR"/>
+                        <viewControllerLayoutGuide type="bottom" id="rh8-AO-DQ5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UyK-tt-6Of">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-5U-fw6">
+                                <state key="normal" title="显示一个成功的泡泡控件"/>
+                                <connections>
+                                    <action selector="showSuccessBubble:" destination="fHV-1Z-zkI" eventType="touchUpInside" id="mTh-NJ-M3O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsq-cX-vWU">
+                                <frame key="frameInset" minX="96" minY="77" width="184" height="30"/>
+                                <state key="normal" title="显示一个加载中的泡泡控件"/>
+                                <connections>
+                                    <action selector="showProgressBubble:" destination="fHV-1Z-zkI" eventType="touchUpInside" id="8i7-ow-Lfe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVj-h0-uJK">
+                                <frame key="frameInset" minX="103" minY="124" width="169" height="30"/>
+                                <state key="normal" title="显示一个错误的泡泡控件"/>
+                                <connections>
+                                    <action selector="showErrorBubble:" destination="fHV-1Z-zkI" eventType="touchUpInside" id="iSP-iB-OKt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIz-70-lvC">
+                                <frame key="frameInset" minX="111" minY="174" width="153" height="30"/>
+                                <state key="normal" title="显示逐帧动画泡泡控件"/>
+                                <connections>
+                                    <action selector="showFrameAnimationBubble:" destination="fHV-1Z-zkI" eventType="touchUpInside" id="UKz-T1-ghC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuG-HR-Ltu">
+                                <frame key="frameInset" minX="103" minY="224" width="169" height="30"/>
+                                <state key="normal" title="显示单个图标的泡泡控件"/>
+                                <connections>
+                                    <action selector="showSingleIconBubble:" destination="fHV-1Z-zkI" eventType="touchUpInside" id="uBS-Wv-Z5Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JVj-h0-uJK" firstAttribute="centerX" secondItem="UyK-tt-6Of" secondAttribute="centerX" id="9sF-89-uaB"/>
+                            <constraint firstItem="RuG-HR-Ltu" firstAttribute="centerX" secondItem="UyK-tt-6Of" secondAttribute="centerX" id="HzH-xr-rL2"/>
+                            <constraint firstItem="RuG-HR-Ltu" firstAttribute="top" secondItem="gIz-70-lvC" secondAttribute="bottom" constant="20" id="T7o-4N-Y9T"/>
+                            <constraint firstItem="JVj-h0-uJK" firstAttribute="top" secondItem="Fsq-cX-vWU" secondAttribute="bottom" constant="17" id="ZXA-Sf-sM3"/>
+                            <constraint firstItem="gIz-70-lvC" firstAttribute="centerX" secondItem="UyK-tt-6Of" secondAttribute="centerX" id="h9F-F4-ihg"/>
+                            <constraint firstItem="cIf-5U-fw6" firstAttribute="top" secondItem="XzN-jX-pzR" secondAttribute="bottom" constant="8" id="heK-bs-PuA"/>
+                            <constraint firstItem="Fsq-cX-vWU" firstAttribute="top" secondItem="cIf-5U-fw6" secondAttribute="bottom" constant="18" id="oYc-n7-nec"/>
+                            <constraint firstItem="gIz-70-lvC" firstAttribute="top" secondItem="JVj-h0-uJK" secondAttribute="bottom" constant="20" id="tYA-HI-qgW"/>
+                            <constraint firstItem="Fsq-cX-vWU" firstAttribute="centerX" secondItem="UyK-tt-6Of" secondAttribute="centerX" id="unD-Ac-kaY"/>
+                            <constraint firstItem="cIf-5U-fw6" firstAttribute="centerX" secondItem="UyK-tt-6Of" secondAttribute="centerX" id="voH-lS-WWo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xya-rf-fSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265" y="-308"/>
         </scene>
     </scenes>
 </document>

@@ -139,7 +139,7 @@ extension UIResponder{
             progressRotateAnimation.duration = 6
             
             drawLayer.add(progressLongAnimation, forKey: "strokeEnd")
-            drawLayer.add(progressRotateAnimation, forKey: "transform.rotation.z")
+            layer.add(progressRotateAnimation, forKey: "transform.rotation.z")
             drawLayer.add(progressLongEndAnimation, forKey: "trokeStart")
         }
         info.title = "请稍候..."
@@ -158,6 +158,9 @@ extension UIResponder{
         LKBubbleView.defaultBubbleView().showWithInfo(info: info)
     }
     
+    /// 获取默认的显示错误的泡泡信息对象，可以在此基础之上自定义
+    ///
+    /// - returns: 泡泡信息描述对象
     func getDefaultErrorBubbleInfo() -> LKBubbleInfo {
         let info: LKBubbleInfo = LKBubbleInfo()
         
@@ -207,8 +210,8 @@ extension UIResponder{
             // 半圆+动画的绘制路径初始化
             let rightPath: UIBezierPath = UIBezierPath()
             // 绘制大半圆
-            rightPath.addArc(withCenter: CGPoint(x: layer.frame.size.width / 2 , y: layer.frame.size.height / 2), radius: layer.frame.size.width / 2 - STROKE_WIDTH, startAngle: CGFloat(-43 * M_PI / 180), endAngle: CGFloat(-315 * M_PI / 180), clockwise: false)
-            rightPath.addLine(to: CGPoint(x: layer.frame.size.width * 0.35, y: layer.frame.size.width * 0.35))
+            rightPath.addArc(withCenter: CGPoint(x: layer.frame.size.width / 2 , y: layer.frame.size.height / 2), radius: layer.frame.size.width / 2 - STROKE_WIDTH, startAngle: CGFloat(-128 * M_PI / 180), endAngle: CGFloat(133 * M_PI / 180), clockwise: true)
+            rightPath.addLine(to: CGPoint(x: layer.frame.size.width * 0.65, y: layer.frame.size.width * 0.35))
             // 把路径设置为当前图层的路径
             rightLayer.path = rightPath.cgPath
             
@@ -255,6 +258,11 @@ extension UIResponder{
         let info: LKBubbleInfo = self.getDefaultErrorBubbleInfo()
         info.title = title
         LKBubbleView.defaultBubbleView().showWithinfo(info:  info, autoCloseTime:  autoCloseTime)
+    }
+    
+    /// 隐藏现在显示的泡泡控件
+    func hideBubble() -> Void {
+        LKBubbleView.defaultBubbleView().hide()
     }
     
 }

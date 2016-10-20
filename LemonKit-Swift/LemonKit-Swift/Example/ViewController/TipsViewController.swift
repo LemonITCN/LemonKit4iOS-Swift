@@ -18,8 +18,8 @@ class TipsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.titleArray = ["LKNotification" , "LKActionSheet"]
-        self.viewControllerIDArray = ["LKNotificationViewController" , "LKActionSheetViewController"]
+        self.titleArray = ["LKNotification" , "LKBubble" , "LKActionSheet"]
+        self.viewControllerIDArray = ["LKNotificationViewController" ,"LKBubbleViewController", "LKActionSheetViewController"]
         self.tipStoryBoard = UIStoryboard.init(name: "Tips", bundle: nil)
     }
     
